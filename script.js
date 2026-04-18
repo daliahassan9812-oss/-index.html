@@ -1,8 +1,8 @@
 let shops = [
-    {name: "Zara", type: "ملابس", price: 3000, img: "images/ZARA.jpg"},
-    {name: "Nike", type: "رياضة", price: 2500, img: "images/NIKE.jpg"},
-    {name: "LC Waikiki", type: "ملابس", price: 1200, img: "images/LC WAIKIKI.jpg"},
-    {name: "Adidas", type: "رياضة", price: 4500,img: "images/ADIDAS.jpg"}
+    {name: "Zara", type: "ملابس", price: 3000 },
+    {name: "Nike", type: "رياضة", price: 2500} ,
+    {name: "LC Waikiki", type: "ملابس", price: 1200 },
+    {name: "Adidas", type: "رياضة", price: 4500}
 ];
 
 let selected = [];
@@ -15,7 +15,7 @@ function displayShops(list) {
     list.forEach(shop => {
         container.innerHTML += `
             <div class="card">
-                <img src="${shop.img}">
+                
                 <div class="card-content">
                     <h3>${shop.name}</h3>
                     <p>${shop.type}</p>
